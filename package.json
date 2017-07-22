@@ -1,0 +1,19 @@
+{
+  "name": "js-fp-koans",
+  "version": "1.0.0",
+  "description": "A set of programming koans for learning js-fp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRacoon/js-fp-koans.git"
+  },
+  "author": "Erik Sutherland <erik.misu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrRacoon/js-fp-koans/issues"
+  },
+  "homepage": "https://github.com/MrRacoon/js-fp-koans#readme"
+}
