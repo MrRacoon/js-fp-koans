@@ -9,6 +9,7 @@
     "test:strings": "mocha --compilers js:babel-core/register 'src/2-strings.js' || true",
     "test:numbers": "mocha --compilers js:babel-core/register 'src/3-numbers.js' || true",
     "test:functions": "mocha --compilers js:babel-core/register 'src/4-functions.js' || true",
+    "test:predicates": "mocha --compilers js:babel-core/register 'src/5-predicates.js' || true",
     "test": "run-s lint test:*"
   },
   "repository": {
