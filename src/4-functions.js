@@ -1,13 +1,8 @@
 import {
-  curry,
-  compose,
-  pipe,
   __,
-
+  curry, compose, pipe,
   // Helpers
-  inc,
-  add,
-  divide,
+  inc, add, divide,
 } from 'ramda';
 
 
@@ -33,7 +28,7 @@ describe('4. functions', () => {
     it('will combine functions from last to first', () => {
       compose(inc, add)(1, 2).should.be.eql(4);
     });
-    it('will not preserve the currying properties', () => {
+    it('will not preserve the currying properties of the last fn', () => {
       compose(inc, add)(1).should.not.be.a('function');
       compose(inc, add)(1).should.be.eql(NaN);
     });
@@ -45,13 +40,13 @@ describe('4. functions', () => {
     it('will combine functions from first to last', () => {
       pipe(add, inc)(1, 2).should.be.eql(4);
     });
-    it('will not preserve the currying properties', () => {
+    it('will not preserve the currying properties of the first fn', () => {
       pipe(add, inc)(1).should.not.be.a('function');
       pipe(add, inc)(1).should.be.eql(NaN);
     });
   });
   describe('__ (or placeholder)', () => {
-    it('a value', () => {
+    it('is a value', () => {
       __.should.be.eql({'@@functional/placeholder': true});
     });
     it('can defer the order that arguments are given (2 arg example)', () => {

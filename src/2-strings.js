@@ -3,13 +3,17 @@ import {
 } from 'ramda';
 
 describe('2. strings', () => {
-  describe('The "join" function', () => {
+  describe('join', () => {
     it('will join strings together, interspersing the first argument', () => {
       join(',', ['thing', 'other thing'])
         .should.be.eql('thing,other thing');
     });
+    it('is curried', () => {
+      join(',')(['thing', 'other thing'])
+        .should.be.eql('thing,other thing');
+    });
   });
-  describe('The "concat" function', () => {
+  describe('concat', () => {
     it('only accepts two arguments', () => {
       concat('1', '2', '3').should.be.eql('12');
     });

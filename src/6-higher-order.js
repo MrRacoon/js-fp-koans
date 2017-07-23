@@ -27,7 +27,7 @@ const isFruit = whereEq({type: 'fruit'});
 const isVegetable = propEq('type', 'vegetable');
 
 describe('6. higher order functions', () => {
-  it('any function that takes a function', () => {
+  it('is any function that takes a function', () => {
     //
     filter(isFruit, data)
     //

@@ -4,14 +4,16 @@ import {
 // import __ from './internal/placeholder';
 
 describe('1. booleans', () => {
-  it('is a function to invert the value og a boolean', () => {
-    //
-    not(true).should.be.eql(false);
-    not(false).should.be.eql(true);
-    //
+  describe('not', () => {
+    it('can invert boolean values', () => {
+      //
+      not(true).should.be.eql(false);
+      not(false).should.be.eql(true);
+      //
+    });
   });
-  describe('The "and" function', () => {
-    it('is a function for && operations', () => {
+  describe('and', () => {
+    it('is the function equivalent for `&&` operations', () => {
       //
       (true && true).should.be.eql(true);
       and(true, true).should.be.eql(true);
@@ -22,9 +24,12 @@ describe('1. booleans', () => {
       and(true)(false).should.be.eql(false);
       //
     });
+    it('is curried', () => {
+      and(false)(true).should.be.eql(false);
+    });
   });
-  describe('The "or" function', () => {
-    it('is a function for || operations', () => {
+  describe('or', () => {
+    it('is the function equivalent for `||` operations', () => {
       //
       (true || true).should.be.eql(true);
       or(true, true).should.be.eql(true);
@@ -40,6 +45,9 @@ describe('1. booleans', () => {
       or('value', 'some default value').should.be.eql('value');
       or(false, 'some default value').should.be.eql('some default value');
       //
+    });
+    it('is curried', () => {
+      or(false)(true).should.be.eql(true);
     });
   });
 });

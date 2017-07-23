@@ -24,8 +24,8 @@ Function types
 Coming Soon
 -----------
 
-    Structures
-    ----------
+    Primitive Structures
+    --------------------
 
     * lists
     * objects
