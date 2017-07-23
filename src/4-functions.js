@@ -11,7 +11,7 @@ import {
 } from 'ramda';
 
 
-describe('function', () => {
+describe('4. functions', () => {
   describe('curry', () => {
     it('takes a function and curries it', () => {
       const mult = (a, b) => a * b;

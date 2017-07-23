@@ -2,7 +2,7 @@ import {
   join, concat,
 } from 'ramda';
 
-describe('2-Strings', () => {
+describe('2. strings', () => {
   describe('The "join" function', () => {
     it('will join strings together, interspersing the first argument', () => {
       join(',', ['thing', 'other thing'])

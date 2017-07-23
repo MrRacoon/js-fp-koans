@@ -5,7 +5,7 @@ import {
   multiply, divide,
 } from 'ramda';
 
-describe('Functions to operate on numbers', () => {
+describe('3. numbers', () => {
   describe('inc', () => {
     it('increments values by one', () => {
       inc(1).should.be.eql(2);

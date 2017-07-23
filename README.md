@@ -1,6 +1,11 @@
 js-fp-koans
 ===========
 
+This repository contains a set of koans for diving into the world of functional
+programming in Javascript.
+
+The aim is to teach principles from [ramda][ramda] and [fantasy-land][fantasy].
+
 Types
 -----
 
@@ -13,10 +18,32 @@ Function types
 --------------
 
 5. predicates
-6. higher order
+6. higher order functions
 
-Structures
-----------
 
-7. lists
-8. objects
+Coming Soon
+-----------
+
+    Structures
+    ----------
+
+    * lists
+    * objects
+
+    Lenses
+    ------
+
+    * view
+    * set
+    * over
+
+    Advanced Structures
+    -------------------
+
+    * Tuple
+    * Maybe
+    * Either
+
+
+[ramda]: http://ramdajs.com/
+[fantasy]: https://github.com/fantasyland/fantasy-land

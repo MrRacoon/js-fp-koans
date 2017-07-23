@@ -5,7 +5,7 @@ import {
   // eqProps, whereEq,
 } from 'ramda';
 
-describe('5-predicates', () => {
+describe('5. predicates', () => {
   describe('equals', () => {
     it('will check two values to see if they are equal', () => {
       equals(1, 1).should.be.eql(true);

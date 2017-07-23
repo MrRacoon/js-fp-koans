@@ -3,7 +3,7 @@ import {
 } from 'ramda';
 // import __ from './internal/placeholder';
 
-describe('Boolean operations', () => {
+describe('1. booleans', () => {
   it('is a function to invert the value og a boolean', () => {
     //
     not(true).should.be.eql(false);
