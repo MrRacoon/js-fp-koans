@@ -1,5 +1,6 @@
-import {join, concat} from 'ramda';
-// import __ from './internal/placeholder';
+import {
+  join, concat,
+} from 'ramda';
 
 describe('2-Strings', () => {
   describe('The "join" function', () => {
@@ -8,7 +9,6 @@ describe('2-Strings', () => {
         .should.be.eql('thing,other thing');
     });
   });
-
   describe('The "concat" function', () => {
     it('only accepts two arguments', () => {
       concat('1', '2', '3').should.be.eql('12');
