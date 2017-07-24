@@ -1,10 +1,18 @@
 js-fp-koans
 ===========
 
+**Note: this repo is in active development, and not ready to be consumed**
+
+[]: finish the curriculum to the end.
+[]: ensure all tests are passing.
+[]: inject the `REPLACE` variable in each learning module.
+
 This repository contains a set of koans for diving into the world of functional
 programming in Javascript.
 
-The aim is to teach principles from [ramda][ramda] and [fantasy-land][fantasy].
+The aim is to impart principles from [ramda][ramda] and [fantasy-land][fantasy]
+using a hands on approach. After this lesson, you should be familiar with most
+of the basic principles, (and possibly the more advanced ones).
 
 Usage
 -----
@@ -16,18 +24,18 @@ git clone https://github.com/MrRacoon/js-fp-koans.git
 cd js-fp-koans
 ```
 
-I would suggest starting from the beginning and working your way through the
+It's suggested to start from the beginning and working your way through the
 koans in order.
 
 Open the koan, and read through it, and replace every instance of `REPLACE` with
 the appropriate value.
 
 You should check your progress as you go. Every file can be tested individually
-by running the corresponding test:# npm script.
+by running the corresponding `test:#` npm script.
 
 For example, if you are working on `1-booleans` you would run `npm run test:1`.
 
-good luck, have fun.
+Good luck, have fun.
 
 Types
 -----
@@ -43,9 +51,8 @@ Function types
 5. predicates
 6. higher order functions
 
-
-Primitive Structures
---------------------
+Structures
+----------
 
 7. lists
 8. objects
