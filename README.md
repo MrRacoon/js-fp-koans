@@ -3,9 +3,9 @@ js-fp-koans
 
 **Note: this repo is in active development, and not ready to be consumed**
 
-[]: finish the curriculum to the end.
-[]: ensure all tests are passing.
-[]: inject the `REPLACE` variable in each learning module.
+[ ] finish the curriculum to the end.
+[ ] ensure all tests are passing.
+[ ] inject the `REPLACE` variable in each learning module.
 
 This repository contains a set of koans for diving into the world of functional
 programming in Javascript.
