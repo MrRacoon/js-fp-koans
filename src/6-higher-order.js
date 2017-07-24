@@ -30,7 +30,6 @@ describe('6. higher order functions', () => {
   it('is any function that takes a function', () => {
     //
     filter(isFruit, data)
-    //
       .should.be.eql([
         {name: 'apple', type: 'fruit'},
         {name: 'orange', type: 'fruit'},

@@ -6,6 +6,29 @@ programming in Javascript.
 
 The aim is to teach principles from [ramda][ramda] and [fantasy-land][fantasy].
 
+Usage
+-----
+
+First get the koans.
+
+```shell
+git clone https://github.com/MrRacoon/js-fp-koans.git
+cd js-fp-koans
+```
+
+I would suggest starting from the beginning and working your way through the
+koans in order.
+
+Open the koan, and read through it, and replace every instance of `REPLACE` with
+the appropriate value.
+
+You should check your progress as you go. Every file can be tested individually
+by running the corresponding test:# npm script.
+
+For example, if you are working on `1-booleans` you would run `npm run test:1`.
+
+good luck, have fun.
+
 Types
 -----
 
@@ -21,14 +44,14 @@ Function types
 6. higher order functions
 
 
+Primitive Structures
+--------------------
+
+7. lists
+8. objects
+
 Coming Soon
 -----------
-
-    Primitive Structures
-    --------------------
-
-    * lists
-    * objects
 
     Lenses
     ------
