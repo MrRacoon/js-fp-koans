@@ -12,6 +12,8 @@
     "test:4": "npm run mocha -- 'src/4-*.js' || true",
     "test:5": "npm run mocha -- 'src/5-*.js' || true",
     "test:6": "npm run mocha -- 'src/6-*.js' || true",
+    "test:7": "npm run mocha -- 'src/7-*.js' || true",
+    "test:8": "npm run mocha -- 'src/8-*.js' || true",
     "test": "(npm run mocha -- 'src/*.js') || true"
   },
   "repository": {
