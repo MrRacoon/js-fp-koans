@@ -7,6 +7,8 @@ js-fp-koans
 - [ ] ensure all tests are passing.
 - [ ] inject the `REPLACE` variable in each learning module.
 
+---
+
 This repository contains a set of koans for diving into the world of functional
 programming in Javascript.
 
