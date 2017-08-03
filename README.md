@@ -3,8 +3,8 @@ js-fp-koans
 
 **Note: this repo is in active development, and not ready to be consumed**
 
-- [ ] finish the curriculum to the end.
-- [ ] ensure all tests are passing.
+- [x] finish the curriculum to the end.
+- [x] ensure all tests are passing.
 - [ ] inject the `REPLACE` variable in each learning module.
 
 ---
@@ -30,12 +30,17 @@ It's suggested to start from the beginning and working your way through the
 koans in order.
 
 Open the koan, and read through it, and replace every instance of `REPLACE` with
-the appropriate value.
+the appropriate value. Be sure to also remove the `x` from the beginning of each
+`describe` block.
 
 You should check your progress as you go. Every file can be tested individually
 by running the corresponding `test:#` npm script.
 
-For example, if you are working on `1-booleans` you would run `npm run test:1`.
+For example, if you are working on `1-booleans` you would run:
+
+```shell
+npm run test:1
+```
 
 Good luck, have fun.
 
@@ -58,23 +63,6 @@ Structures
 
 7. lists
 8. objects
-
-Coming Soon
------------
-
-    Lenses
-    ------
-
-    * view
-    * set
-    * over
-
-    Advanced Structures
-    -------------------
-
-    * Tuple
-    * Maybe
-    * Either
 
 
 [ramda]: http://ramdajs.com/
