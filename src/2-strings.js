@@ -3,7 +3,7 @@ import {
 } from 'ramda';
 
 describe('2. strings', () => {
-  describe('join', () => {
+  xdescribe('join', () => {
     it('will join strings together, interspersing the first argument', () => {
       join(',', ['thing', 'other thing'])
         .should.be.eql('thing,other thing');
@@ -13,7 +13,7 @@ describe('2. strings', () => {
         .should.be.eql('thing,other thing');
     });
   });
-  describe('concat', () => {
+  xdescribe('concat', () => {
     it('only accepts two arguments', () => {
       concat('1', '2', '3').should.be.eql('12');
     });

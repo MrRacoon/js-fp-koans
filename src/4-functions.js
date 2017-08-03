@@ -7,7 +7,7 @@ import {
 
 
 describe('4. functions', () => {
-  describe('curry', () => {
+  xdescribe('curry', () => {
     it('takes a function and curries it', () => {
       const mult = (a, b) => a * b;
       const curriedMult = curry(mult);
@@ -21,7 +21,7 @@ describe('4. functions', () => {
       //
     });
   });
-  describe('compose', () => {
+  xdescribe('compose', () => {
     it('will combine two (or more) functions into one', () => {
       compose(inc, inc)(1).should.be.eql(3);
     });
@@ -33,7 +33,7 @@ describe('4. functions', () => {
       compose(inc, add)(1).should.be.eql(NaN);
     });
   });
-  describe('pipe', () => {
+  xdescribe('pipe', () => {
     it('will combine two (or more) functions into one', () => {
       pipe(inc, inc)(1).should.be.eql(3);
     });
@@ -45,7 +45,7 @@ describe('4. functions', () => {
       pipe(add, inc)(1).should.be.eql(NaN);
     });
   });
-  describe('__ (or placeholder)', () => {
+  xdescribe('__ (or placeholder)', () => {
     it('is a value', () => {
       __.should.be.eql({'@@functional/placeholder': true});
     });

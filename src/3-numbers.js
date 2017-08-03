@@ -6,25 +6,25 @@ import {
 } from 'ramda';
 
 describe('3. numbers', () => {
-  describe('inc', () => {
+  xdescribe('inc', () => {
     it('increments values by one', () => {
       inc(1).should.be.eql(2);
       inc(2).should.be.eql(3);
     });
   });
-  describe('dec', () => {
+  xdescribe('dec', () => {
     it('decrements values by one', () => {
       dec(1).should.be.eql(0);
       dec(2).should.be.eql(1);
     });
   });
-  describe('negate', () => {
+  xdescribe('negate', () => {
     it('returns the negation of the given value', () => {
       negate(2).should.be.eql(-2);
       negate(4).should.be.eql(-4);
     });
   });
-  describe('add', () => {
+  xdescribe('add', () => {
     it('adds two numbers', () => {
       add(1, 2).should.be.eql(3);
     });
@@ -32,16 +32,16 @@ describe('3. numbers', () => {
       add(1)(2).should.be.eql(3);
     });
   });
-  describe('subtract', () => {
+  xdescribe('subtract', () => {
     it('subtracts the second number from the first', () => {
       subtract(2, 5).should.be.eql(-3);
       subtract(5, 1).should.be.eql(4);
     });
-    it('is curries', () => {
+    it('is curried', () => {
       subtract(2)(5).should.be.eql(-3);
     });
   });
-  describe('multiply', () => {
+  xdescribe('multiply', () => {
     it('multiplies two numbers together', () => {
       multiply(2, 5).should.be.eql(10);
     });
@@ -49,7 +49,7 @@ describe('3. numbers', () => {
       multiply(2)(5).should.be.eql(10);
     });
   });
-  describe('divide', () => {
+  xdescribe('divide', () => {
     it('divides the first number by the second', () => {
       divide(6, 2).should.be.eql(3);
     });

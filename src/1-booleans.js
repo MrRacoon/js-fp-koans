@@ -4,7 +4,7 @@ import {
 // import __ from './internal/placeholder';
 
 describe('1. booleans', () => {
-  describe('not', () => {
+  xdescribe('not', () => {
     it('can invert boolean values', () => {
       //
       not(true).should.be.eql(false);
@@ -12,7 +12,7 @@ describe('1. booleans', () => {
       //
     });
   });
-  describe('and', () => {
+  xdescribe('and', () => {
     it('is the function equivalent for `&&` operations', () => {
       //
       (true && true).should.be.eql(true);
@@ -28,7 +28,7 @@ describe('1. booleans', () => {
       and(false)(true).should.be.eql(false);
     });
   });
-  describe('or', () => {
+  xdescribe('or', () => {
     it('is the function equivalent for `||` operations', () => {
       //
       (true || true).should.be.eql(true);

@@ -6,7 +6,7 @@ import {
 } from 'ramda';
 
 describe('5. predicates', () => {
-  describe('equals', () => {
+  xdescribe('equals', () => {
     it('will check two values to see if they are equal', () => {
       equals(1, 1).should.be.eql(true);
       equals(1, 2).should.be.eql(false);
@@ -15,7 +15,7 @@ describe('5. predicates', () => {
       equals(1, '1').should.be.eql(false);
     });
   });
-  describe('isNil', () => {
+  xdescribe('isNil', () => {
     it('returns true when given null', () => {
       isNil(null).should.be.eql(true);
     });

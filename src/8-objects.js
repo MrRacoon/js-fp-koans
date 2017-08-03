@@ -1,64 +1,37 @@
 import {
-  objOf,
-
-  has,
-
-  keys,
-  values,
-
-  prop,
-  propOr,
-
-  path,
-  pathOr,
-
-  assoc,
-  assocPath,
-
-  dissoc,
-  dissocPath,
-
-  merge,
-  mergeAll,
-
-  map,
-  mapObjIndexed,
-
-  toPairs,
-  fromPairs,
-
+  objOf, has, keys, values, prop, propOr, path, pathOr, assoc, assocPath,
+  dissoc, dissocPath, merge, mergeAll, map, mapObjIndexed, toPairs, fromPairs,
   pick,
-
   // helpers
   inc,
 } from 'ramda';
 
 describe('8. objects', () => {
-  describe('objOf', () => {
+  xdescribe('objOf', () => {
     it('creates a singleton object', () => {
       objOf('a', 42).should.be.eql({a: 42});
     });
   });
 
-  describe('has', () => {
+  xdescribe('has', () => {
     it('returns true if the key exists in the object', () => {
       has('a', {a: 42}).should.be.eql(true);
       has('b', {a: 42}).should.be.eql(false);
     });
   });
 
-  describe('keys', () => {
+  xdescribe('keys', () => {
     it('should return a list of all the keys in the object', () => {
       keys({a: 42, b: 84}).should.be.eql(['a', 'b']);
     });
   });
-  describe('values', () => {
+  xdescribe('values', () => {
     it('should return a list of all the values in an object', () => {
       values({a: 42, b: 84}).should.be.eql([42, 84]);
     });
   });
 
-  describe('prop', () => {
+  xdescribe('prop', () => {
     it('creates a function to return the value at the given property', () => {
       prop('a', {a: 42}).should.be.eql(42);
     });
@@ -66,7 +39,7 @@ describe('8. objects', () => {
       prop('a')({a: 42}).should.be.eql(42);
     });
   });
-  describe('propOr', () => {
+  xdescribe('propOr', () => {
     it('creates a function to return the value at the given property', () => {
       propOr('def', 'a', {a: 42}).should.be.eql(42);
     });
@@ -81,7 +54,7 @@ describe('8. objects', () => {
     });
   });
 
-  describe('path', () => {
+  xdescribe('path', () => {
     it('should get the nested value', () => {
       path(['a', 'b', 'c'], {a: {b: {c: 42}}}).should.be.eql(42);
     });
@@ -89,7 +62,7 @@ describe('8. objects', () => {
       path(['a', 'b', 'c'])({a: {b: {c: 42}}}).should.be.eql(42);
     });
   });
-  describe('pathOr', () => {
+  xdescribe('pathOr', () => {
     it('should get the nested value', () => {
       pathOr('def', ['a', 'b', 'c'], {a: {b: {c: 42}}}).should.be.eql(42);
     });
@@ -106,7 +79,7 @@ describe('8. objects', () => {
     });
   });
 
-  describe('assoc', () => {
+  xdescribe('assoc', () => {
     it('should set a value at a given path', () => {
       assoc('key', 'val', {}).should.be.eql({key: 'val'});
     });
@@ -116,7 +89,7 @@ describe('8. objects', () => {
       assoc('key')('val')({}).should.be.eql({key: 'val'});
     });
   });
-  describe('assocPath', () => {
+  xdescribe('assocPath', () => {
     it('should set a value at a given property', () => {
       assocPath(['key', 'other'], 'val', {})
         .should.be.eql({key: {other: 'val'}});
@@ -133,7 +106,7 @@ describe('8. objects', () => {
     });
   });
 
-  describe('dissoc', () => {
+  xdescribe('dissoc', () => {
     it('should remove the value from the object', () => {
       dissoc('a', {a: 42}).should.be.eql({});
     });
@@ -144,7 +117,7 @@ describe('8. objects', () => {
       dissoc('a')({a: 42}).should.be.eql({});
     });
   });
-  describe('dissocPath', () => {
+  xdescribe('dissocPath', () => {
     it('should remove the value from the object', () => {
       dissocPath(['a'], {a: 42}).should.be.eql({});
       dissocPath(['a', 'b'], {a: {b: 42}}).should.be.eql({a: {}});
@@ -159,7 +132,7 @@ describe('8. objects', () => {
     });
   });
 
-  describe('merge', () => {
+  xdescribe('merge', () => {
     it('should combine two objects together', () => {
       merge({a: 'a'}, {b: 'b'}).should.be.eql({a: 'a', b: 'b'});
     });
@@ -170,7 +143,7 @@ describe('8. objects', () => {
       merge({a: 'a'})({b: 'b'}).should.be.eql({a: 'a', b: 'b'});
     });
   });
-  describe('mergeAll', () => {
+  xdescribe('mergeAll', () => {
     it('should combine a list of objects together', () => {
       mergeAll([{a: 'a'}, {b: 'b'}, {c: 'c'}])
         .should.be.eql({a: 'a', b: 'b', c: 'c'});
@@ -181,7 +154,7 @@ describe('8. objects', () => {
     });
   });
 
-  describe('map', () => {
+  xdescribe('map', () => {
     it('should apply a function to each value', () => {
       map(inc, {a: 1, b: 42}).should.be.eql({a: 2, b: 43});
     });
@@ -189,7 +162,7 @@ describe('8. objects', () => {
       map(inc)({a: 1, b: 42}).should.be.eql({a: 2, b: 43});
     });
   });
-  describe('mapObjIndexed', () => {
+  xdescribe('mapObjIndexed', () => {
     const fn = (value, key, obj) => key + value;
     it('maps a function over each value, and passes the key as well', () => {
       mapObjIndexed(fn, {a: 1, b: 2}).should.be.eql({a: 'a1', b: 'b2'});
@@ -199,18 +172,18 @@ describe('8. objects', () => {
     });
   });
 
-  describe('toPairs', () => {
+  xdescribe('toPairs', () => {
     it('converts an object to a list of key value pairs', () => {
       toPairs({a: 1, b: 2}).should.be.eql([['a', 1], ['b', 2]]);
     });
   });
-  describe('fromPairs', () => {
+  xdescribe('fromPairs', () => {
     it('constructs an object from a list of pairs', () => {
       fromPairs([['a', 1], ['b', 2]]).should.be.eql({a: 1, b: 2});
     });
   });
 
-  describe('pick', () => {
+  xdescribe('pick', () => {
     it('preserves only the values passed in', () => {
       pick(['a', 'b'], {a: 1, b: 2, c: 3}).should.be.eql({a: 1, b: 2});
     });
@@ -218,6 +191,4 @@ describe('8. objects', () => {
       pick(['a', 'b'])({a: 1, b: 2, c: 3}).should.be.eql({a: 1, b: 2});
     });
   });
-
-  // evolve,
 });
