@@ -14,7 +14,8 @@
     "test:6": "npm run mocha -- 'src/6-*.js' || true",
     "test:7": "npm run mocha -- 'src/7-*.js' || true",
     "test:8": "npm run mocha -- 'src/8-*.js' || true",
-    "test": "(npm run mocha -- 'src/*.js') || true"
+    "test": "(npm run mocha -- 'src/*.js') || true",
+    "check": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",

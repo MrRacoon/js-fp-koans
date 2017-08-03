@@ -19,11 +19,13 @@ let data = [
   },
 ];
 
-// Getters
+// getName :: { String: a } -> a
 const getName = prop('name');
 
-// Predicates
+// isFruit :: { String: a } -> Bool
 const isFruit = whereEq({type: 'fruit'});
+
+// isVegetable :: { String: a } -> Bool
 const isVegetable = propEq('type', 'vegetable');
 
 describe('6. higher order functions', () => {

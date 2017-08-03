@@ -15,7 +15,10 @@ const data = [
   {name: 'oj', type: 'juice'},
 ];
 
+// getName :: { String: a } -> a
 const getName = prop('name');
+
+// isSoda :: { String: a } -> Bool
 const isSoda = propEq('type', 'soda');
 
 describe('7. lists', () => {
