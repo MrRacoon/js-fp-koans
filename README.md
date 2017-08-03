@@ -1,14 +1,6 @@
 js-fp-koans
 ===========
 
-**Note: this repo is in active development, and not ready to be consumed**
-
-- [x] finish the curriculum to the end.
-- [x] ensure all tests are passing.
-- [ ] inject the `REPLACE` variable in each learning module.
-
----
-
 This repository contains a set of koans for diving into the world of functional
 programming in Javascript.
 
@@ -42,7 +34,7 @@ For example, if you are working on `1-booleans` you would run:
 npm run test:1
 ```
 
-Good luck, have fun.
+Good luck, have fun. Lemme know if a problem is lame, or something feels missing.
 
 Types
 -----
